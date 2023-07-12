@@ -1,0 +1,145 @@
+html{
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45% 55%;
+    justify-content: center;
+    align-content: center; 
+    font-family: Karla;
+}
+.header{
+    grid-column: 1/3;
+    background-color: white;
+    padding: 2rem 2rem 2rem 2rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.header-title{
+    color: hsl(179, 79%, 27%);
+    font-size: 1.5rem;
+    margin-top: 0%;
+}
+.header-subtitle{
+    color: hsl(71, 73%, 54%);
+    font-family: 700;
+    font-size: 1rem;
+}
+.header-description{
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0.4rem;
+}
+.subscription-card{
+    background-color: hsl(179, 79%, 27%);
+    padding: 2rem;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 8px;
+}
+.subscription-card-title{
+    color: hsl(204, 43%, 93%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0%;
+}
+.subscription-card-amount{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    column-gap: 0.3rem;
+}
+span{
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    align-self: center;
+}
+.subscription-card-details{
+    color: white;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.subscription-card-button{
+    margin-top: 2rem;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.why_us-card{
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+    padding-bottom: 1rem;
+    border-bottom-right-radius: 8px;
+}
+.why_us-card-title{
+    margin-top: 0%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+.why_us-card-description{
+    color:white;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0%;
+    margin-bottom: 0.3rem;
+}
+@media (max-width:375px){
+   .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; 
+    font-family: Karla;
+    margin: 1rem;
+   }
+   .header{
+    background-color: white;
+    padding: 2rem 2rem 2rem 2rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .subscription-card{
+        background-color: hsl(179, 79%, 27%);
+        padding: 2rem;
+        padding-bottom: 1rem;
+        border-bottom-left-radius: 0px;
+    }
+    .why_us-card{
+        background-color: hsl(179, 62%, 43%);
+        padding: 2rem;
+        padding-bottom: 1rem;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
